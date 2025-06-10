@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove the body styles that are interfering with Tailwind layouts */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Only apply these styles when a specific class is added */
+.custom-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.custom-button:hover {
+  border-color: #646cff;
+}
+
+.custom-button:focus,
+.custom-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Let Tailwind handle dark mode instead of media queries */
+/* Removed the @media (prefers-color-scheme: light) block */
