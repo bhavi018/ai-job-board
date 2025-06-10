@@ -10,15 +10,15 @@ lerna-debug.log*
 # Dependencies
 node_modules/
 
-# Build
+# Build output
 dist/
 dist-ssr/
 *.local
 
-# OS
+# OS files
 .DS_Store
 
-# Editor directories and files
+# IDE/editor configs
 .vscode/
 .idea/
 *.suo
